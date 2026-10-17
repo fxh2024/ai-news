@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 新闻晚报</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f7f8fa;
+    color: #1f2933;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 16px 12px;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 20px 32px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 24px;
+  }
+  .date-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: 0.5px;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: #6b7280;
+    margin-top: 6px;
+  }
+  article {
+    margin-bottom: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eef1f5;
+  }
+  article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  p {
+    font-size: 15px;
+    color: #374151;
+    margin-bottom: 10px;
+    line-height: 1.75;
+  }
+  .why {
+    font-size: 14.5px;
+    color: #0f766e;
+    margin-bottom: 10px;
+    background: #ecfdf5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-left: 3px solid #10b981;
+    display: inline-block;
+  }
+  .source {
+    font-size: 13.5px;
+    color: #6b7280;
+    margin-top: 8px;
+  }
+  .source a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .source a:hover {
+    text-decoration: underline;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  @media (max-width: 430px) {
+    body { font-size: 15px; line-height: 1.7; padding: 12px 10px; }
+    .container { padding: 18px 14px 24px; border-radius: 14px; }
+    .date-title { font-size: 22px; }
+    h2 { font-size: 16px; }
+    p { font-size: 15px; line-height: 1.75; }
+    .why { font-size: 14px; padding: 7px 10px; }
+    .source { font-size: 13px; }
+  }
+  @media (min-width: 760px) {
+    body { padding: 40px 20px; }
+    .container { padding: 32px 30px 40px; }
+    .date-title { font-size: 28px; }
+    h2 { font-size: 19px; }
+    p { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date-title">AI 新闻晚报</div>
+    <div class="subtitle">2026 年 10 月 17 日 · 每日固定整理 · 给朋友讲的 AI 新闻</div>
+  </header>
+
+  <article>
+    <div class="tag">AI 行业大事件</div>
+    <h2>Meta 发布两款新模型，称可与 OpenAI、Anthropic 抗衡</h2>
+    <p>Meta 上周一推出两款名为“Muse Wonder”和“Muse Wonder Full”的新模型，CEO 扎克伯格宣称性能可比肩 ChatGPT 和 Claude。目前这两款模型仅向 Meta 个人助理应用 Muse 的付费订阅用户开放。Meta 今年 AI 相关投入可能高达 1450 亿美元。</p>
+    <div class="why">值得关注：Meta 正式加入前沿模型第一梯队，大模型竞争再添一强劲玩家。</div>
+    <div class="source">来源：TechXplore · <a href="https://techxplore.com/news/2026-10-meta-ai-par-openai-anthropic.html" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">AI 政策与监管</div>
+    <h2>美国 FTC 向 OpenAI、Anthropic 发出传票</h2>
+    <p>美国联邦贸易委员会（FTC）向两家 AI 巨头发出民事传票，要求提供安全事故相关文件，调查是否存在消费者保护违规问题。FTC 此前已确认对两家公司展开调查，聚焦 AI 安全风险。</p>
+    <div class="why">值得关注：监管层开始直接介入顶尖 AI 公司的安全合规，未来可能影响模型发布节奏。</div>
+    <div class="source">来源：路透社 / Axios · <a href="https://www.reuters.com/business/us-ftc-subpoenas-openai-anthropic-over-consumer-harms-axios-reports-2026-10-15/" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">新模型发布</div>
+    <h2>Anthropic 推出小模型 Claude Haiku 5.5</h2>
+    <p>Anthropic 于 10 月 7 日发布 Claude Haiku 5.5，主打高吞吐量和低成本场景，适合总结、子代理和浏览器使用。官方称运行成本比上一代降低约 75%。</p>
+    <div class="why">值得关注：AI 模型竞争正从“只拼大”转向“便宜又好用”的实用型小模型。</div>
+    <div class="source">来源：Anthropic 官方 · <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">新模型发布</div>
+    <h2>OpenAI 将 GPT-6 全量推送给用户</h2>
+    <p>OpenAI 在 10 月初将 GPT-6 推送至所有 ChatGPT 用户：Plus、Pro、Business 与 Enterprise 用户由 GPT-6 Sol 驱动，免费用户则切换到 GPT-6 Luna，并带来图形、按钮、表单与图表的智能界面。</p>
+    <div class="why">值得关注：OpenAI 新一代模型已全面落地，普通用户也能直接体验。</div>
+    <div class="source">来源：OpenAI 官方 · <a href="https://openai.com/news/" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">新模型发布</div>
+    <h2>Google 发布 Gemini 4 Argon</h2>
+    <p>Google 于 10 月 1 日发布新一代旗舰模型 Gemini 4 Argon，输出标记上限从上一代的 6.4 万提升至 100 万，10 月 14 日进一步登陆 Gemini 应用，面向 AI Pro 与 AI Ultra 订阅用户开放。</p>
+    <div class="why">值得关注：超长输出能力大幅提升，适合处理长文档和复杂代码任务。</div>
+    <div class="source">来源：Google 开发者博客 · <a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">AI 政策与监管</div>
+    <h2>Google 限制免费用户使用强力 Gemini 模型</h2>
+    <p>从 10 月 9 日起，未订阅 Google AI 的免费用户只能使用较轻量的模型，失去 Flash 和 Pro 等更强模型的访问权限，付费用户才能切换到更强版本。</p>
+    <div class="why">值得关注：AI 聊天产品普遍进入“免费版降级、付费版升级”的阶段。</div>
+    <div class="source">来源：印度今日新闻 · <a href="https://www.indiatoday.in/technology/news/story/google-is-changing-gemini-ai-plans-from-october-9-here-is-what-it-means-for-you-3009656-2026-10-05" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">大厂动态</div>
+    <h2>微软与 OpenAI 解除独家协议</h2>
+    <p>微软和 OpenAI 修改合作条款，OpenAI 的模型授权将不再独家归微软，OpenAI 可向竞争对手云厂商提供技术；微软也在自研自己的 AI 模型。</p>
+    <div class="why">值得关注：AI 云服务格局正在重塑，OpenAI 将拥有更多合作选择。</div>
+    <div class="source">来源：路透社 · <a href="https://www.reuters.com/legal/litigation/microsoft-end-exclusive-license-openais-technology-2026-04-27/" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">AI 融资与上市</div>
+    <h2>Anthropic 筹划 10 月上市，估值冲 2 万亿美元</h2>
+    <p>Anthropic 最快可能在 10 月挂牌上市，市场预期估值高达 2 万亿美元，有望超越 SpaceX，创下史上最大 IPO 纪录。</p>
+    <div class="why">值得关注：AI 创企上市潮来临，公司估值反映市场对生成式 AI 的长期信心。</div>
+    <div class="source">来源：多家财经媒体 · <a href="https://hk.finance.yahoo.com/news/anthropic%E5%82%B3%E6%9C%80%E5%BF%AB10%E6%9C%88ipo-%E4%BC%B0%E5%80%BC%E8%A1%9D%E4%B8%8A2%E5%85%86%E7%BE%8E%E5%85%83-%E6%9C%89%E6%9C%9B%E8%B6%85%E8%B6%8Aspacex-111002524.html" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">AI 行业大事件</div>
+    <h2>OpenAI 因安全担忧暂停新模型发布</h2>
+    <p>OpenAI 因内部安全测试，搁置了原计划 10 月亮相的下一代模型 GPT-6.1 Astra，推迟在 ChatGPT 和 Codex 中推出。</p>
+    <div class="why">值得关注：即使是头部实验室也在为安全放缓，AI 安全监管愈发受重视。</div>
+    <div class="source">来源：华尔街日报 / 路透社 · <a href="https://www.reuters.com/business/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-2026-09-28/" target="_blank">阅读原文</a></div>
+  </article>
+
+  <article>
+    <div class="tag">AI 融资与新产品</div>
+    <h2>微软 Copilot 深度整合 Office</h2>
+    <p>微软新版 Copilot 整合完整 Office 应用体验，Word Copilot 新增引用功能，用于遏制 AI 幻觉；谷歌也把 Gemini 应用改造为多入口枢纽，免费用户可切换 Auto 自动模型。</p>
+    <div class="why">值得关注：AI 助手正从聊天窗口走进日常办公软件，成为标准配置。</div>
+    <div class="source">来源：腾讯新闻 / IT 时代网 · <a href="https://news.qq.com/rain/a/20261014A0AQ7P00" target="_blank">阅读原文</a></div>
+  </article>
+
+  <div class="footer">
+    本晚报由 AI 自动整理，内容来源于公开新闻，仅供参考。如需详细阅读，请点击各条新闻的来源链接。
+  </div>
+</div>
+</body>
+</html>
